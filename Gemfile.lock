@@ -65,6 +65,7 @@ GEM
     multi_json (1.9.2)
     multipart-post (2.0.0)
     naught (1.0.0)
+    pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -105,6 +106,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    sqlite3 (1.3.9)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -140,9 +142,11 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  pg
   rails (= 4.0.4)
   sass-rails (~> 4.0.2)
   sdoc
+  sqlite3
   therubyracer
   turbolinks
   twitter
