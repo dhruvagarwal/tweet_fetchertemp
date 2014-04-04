@@ -1,0 +1,9 @@
+<h1>Tweet Search</h1>
+<p class="desc">Enter a keyword below to search tweets</p>
+
+<%= form_tag(:action => 'fetcher') do %>
+	<%= text_field_tag "keyword", nil, placeholder: 'Enter Keyword' %>
+	&nbsp;
+	<%= submit_tag "Search" ,class: 'btn' %>
+<% end %>
+

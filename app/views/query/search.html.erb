@@ -1,0 +1,7 @@
+<h1>Tweet Search</h1>
+<p>Enter a keyword below to search tweets</p>
+
+<% form_tag(:action => 'search') do |f|%>
+	<%= text_field_tag "keyword" %>
+	<%= submit_tag "Search this shit" %>
+<% end %>

@@ -1,0 +1,15 @@
+<h1>To Do Page</h1>
+<!-- <p>here is the list</p>
+<ul>
+	<% @some_var.each do |a| %>
+		<li> <%= a %></li> 
+	<% end %>
+
+</ul> -->
+<p> here is another list</p>
+<ol>
+	<% @tweet.collect do |a| %>
+		<li><%= a.id %> : <%= a.user.screen_name %> : <%= highlight(a.text,@keyword) %></li> 
+	<% end %>
+	
+</ol>

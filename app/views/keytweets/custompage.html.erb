@@ -1,0 +1,6 @@
+<div class="scroll">
+		<% @tweet.collect do |a| %>
+			<p class="well text-info"><b><%= a.user.screen_name %></b> : <%= highlight(a.text,@keyword) %></p>
+		<% end %>	
+	<div class='next' > <a href='keytweets/custompage?key=<%= @keyword %>'>load more</a></div>
+</div>

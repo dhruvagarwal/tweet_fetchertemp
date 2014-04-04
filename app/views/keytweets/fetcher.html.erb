@@ -1,0 +1,14 @@
+<%= javascript_include_tag "jscroll" %>
+<%= stylesheet_link_tag "keytweets", :media => "all" %>
+<h1>Requested tweets</h1>
+<p class="desc">here is the tweet list with <i>keyword</i> <b><%= @keyword %></b></p>
+<div class="scroll" id="maindiv">
+	<% @tweet.collect do |a| %>
+		<p class="well text-info"><b><%= a.user.screen_name %></b> : <%= highlight(a.text,@keyword) %>
+	<% end %>	
+	<div class='next'><a href='keytweets/custompage?key=<%= @keyword %>'>load more</a></div>
+</div>
+
+<script type="text/javascript">
+	$('.scroll').jscroll();
+</script>
